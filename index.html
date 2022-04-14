@@ -3,7 +3,23 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>My p5.js projects!</title>
+
+		<style>
+			#SecondAttempt {
+				@import "p5.js/Second Attempt to make game/stylesheet.css";
+			}
+
+			#ScrollingTest {
+				@import "p5.js/Scrolling test/stylesheet.css";
+			}
+
+			#MatchGame {
+				@import "p5.js/Match Game for Mama's Birthday/stylesheet.css";
+			}
+		</style>
+		
 		<script>
 			function show(shown, hidden) {
 				document.getElementById(shown).style.display='block';
@@ -11,16 +27,13 @@
 				return false;
 			}
 		</script>
-	    <script src="Libraries/p5.js"></script>
-    	<!--<script src="Libraries/p5.sound.js"></script>-->
+	    <script src="p5.js/Libraries/p5.js"></script>
+    	<!--<script src="p5.js/Libraries/p5.sound.js"></script>-->
 	</head>
 	<body>
 		<div id="Homepage"><h1>haha yes, get rickrolled hard</h1></div>
 
-		<div id="SecondAttempt" style="display:none">
-			<style scoped>
-				@import "p5.js/Second Attempt to make game/stylesheet.css";
-			</style>
+		<div id="SecondAttempt" style="display: none">
 			<script src="p5.js/Second Attempt to make game/sketch.js"></script>
 
 			<div id="Content">
@@ -90,10 +103,7 @@
 			</div>
 		</div>
 
-		<div id="ScrollingTest" style="display:none">
-			<style scoped>
-				@import "p5.js/Scrolling test/stylesheet.css";
-			</style>
+		<div id="ScrollingTest" style="display: none">
 			<script src="p5.js/Scrolling test/sketch.js"></script>
 
 			<div id="Content">
@@ -194,11 +204,9 @@
 			</div>
 		</div>
 
-		<div id="MatchGame" style="display:none">
-			<style scoped>
-				@import "p5.js/Match Game for Mama's Birthday/stylesheet.css";
-			</style>
+		<div id="MatchGame" style="display: none">
 			<script src="p5.js/Match Game for Mama's Birthday/sketch.js"></script>
+			<div id="Canvas"></div>
 		</div>
 	</body>
 </html>

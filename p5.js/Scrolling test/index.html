@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="Assets/FavIcon.png">
+        
+        <title>Scrolling test</title>
+
+        <script src="Libraries/p5.js"></script>
+        <!--<script src="Libraries/p5.sound.js"></script>-->
+        <script src="sketch.js"></script>
+
+        <style>
+            body {
+                margin: 10%;
+                font-family: sans-serif;
+                background: rgb(25, 25, 25);
+            }
+
+            #Content {
+                border-radius: 10px;
+                background: rgb(200, 200, 200);
+                padding: 5%;
+            }
+
+            canvas {
+                border-radius: 10px;
+            }
+
+            #Canvas {
+                text-align: center;
+            }
+
+            #ChangeLog {
+                float: right;
+            }
+
+            .Date {
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="Content">
+            <div id="Canvas"></div>
+            <div><h2>Change Log:</div>
+                <ul>
+                    <li><h3 class="Date">13 of April, 2022</h3>
+                    <ul>
+                        <li>Fixed wall collisions</li>
+                        <li>You can now bounce against purple walls</li>
+                        <li>Added a bit more Rickroll, but unable to make my mind about level design</li>
+                        <li>Contrary to popular believe, I do not crave blood</li>
+                    </ul></li>
+                    <li><h3 class="Date">12 of April, 2022</h3>
+                    <ul>
+                        <li>Made fast falling (Crouching in mid air) slower</li>
+                        <li>Fixed Flag collision</li>
+                        <li>Added more level content including a Rickroll</li>
+                        <li>MY NAME IS CHARLES. Stop it Charles</li>
+                    </ul></li>
+                    <li><h3 class="Date">11 of April, 2022</h3>
+                    <ul>
+                        <li>Added fancy "debug" thing which tells your position and velocity</li>
+                        <li>Mainly played around</li>
+                    </ul></li>
+                    <li><h3 class="Date">10 of April, 2022</h3>
+                    <ul>
+                        <li>You now spawn in the last checkpoint you touched when reloading the browser</li>
+                        <li>Flags are now grey if not selected</li>
+                        <li>Noice particles when touching a checkpoint</li>
+                    </ul></li>
+                    <li><h3 class="Date">9 of April, 2022</h3>
+                    <ul>
+                        <li>Added checkpoints, it took a "while"</li>
+                    </ul></li>
+                    <li><h3 class="Date">8 of April, 2022</h3>
+                    <ul>
+                        <li>Fixed collisions</li>
+                        <li>Made a function to draw the green flag so I can make particles out of it, particles aren't made yet.</li>
+                        <li>Working on checkpoints using flags</li>
+                    </ul></li>
+                    <li><h3 class="Date">7 of April, 2022</h3>
+                    <ul>
+                        <li>Trying to improve collisions and die to lava walls</li>
+                        <li>Found out that functions in objects is a thing</li>
+                        <li>Added a epic green flag</li>
+                        <li>Figured out how to store data after mixing up the parameters</li>
+                    </ul></li>
+                    <li><h3 class="Date">18 of Mar, 2022</h3>
+                    <ul>
+                        <li>Made the lava from red to orange because somebody said it looked like blood when it splashes</li>
+                        <li>Made more level stuff</li>
+                    </ul></li>
+                    <li><h3 class="Date">14 of Mar, 2022</h3>
+                    <ul>
+                        <li>Added Text</li>
+                        <li>Fixed bug when hitting lava</li>
+                        <li>I am great at tutoring</li>
+                    </ul></li>
+                    <li><h3 class="Date">12 of Mar, 2022</h3>
+                    <ul>
+                        <li>Added Lava</li>
+                        <li>Fancy particle effects when dieing lava, bouncing on trampolines, and jumping</li>
+                    </ul></li>
+                    <li><h3 class="Date">11 of Mar, 2022</h3>
+                    <ul>
+                        <li>Updated the website to make it look better</li>
+                        <li>Made the canvas more responsive with the window size</li>
+                    </ul></li>
+                    <li><h3 class="Date">9 of Mar, 2022</h3>
+                    <ul>
+                        <li>Fixed bug where particle doesn't disappear</li>
+                        <li>Added partricle effect when player walks</li>
+                    </ul></li>
+                    <li><h3 class="Date">7 of Mar, 2022</h3>
+                    <ul>
+                        <li>Finished the first draft of a particle</li>
+                    </ul></li>
+                    <li><h3 class="Date">6 of Mar, 2022</h3>
+                    <ul>
+                        <li>Finsihed making the crouching</li>
+                    </ul></li>
+                    <li><h3 class="Date">5 of Mar, 2022</h3>
+                    <ul>
+                        <li>Platformer is a thing now since I got the collision thing working, it used to be a floating square</li>
+                        <li>Finished the system that renders the level and allows collision to work</li>
+                        <li>Started the crouch mechanic</li>
+                    </ul></li>
+                    <li><h3 class="Date">4 of Mar, 2022</h3>
+                    <ul>
+                        <li>Started the test project</li>
+                        <li>Managed to make scrolling and a rough draft for the collisions</li>
+                    </ul></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

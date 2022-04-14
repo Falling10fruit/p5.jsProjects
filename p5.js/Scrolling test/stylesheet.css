@@ -1,0 +1,27 @@
+body {
+    margin: 10%;
+    font-family: sans-serif;
+    background: rgb(25, 25, 25);
+}
+
+#Content {
+    border-radius: 10px;
+    background: rgb(200, 200, 200);
+    padding: 5%;
+}
+
+canvas {
+    border-radius: 10px;
+}
+
+#Canvas {
+    text-align: center;
+}
+
+#ChangeLog {
+    float: right;
+}
+
+.Date {
+    margin-bottom: 5px;
+}

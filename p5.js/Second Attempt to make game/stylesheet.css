@@ -1,0 +1,20 @@
+body {
+    padding: 0;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: sans-serif;
+  }
+
+  #Content {
+    background-color: rgb(197, 197, 197);
+    padding: 5%;
+    border-radius: 5%;
+    overflow: hidden;
+  }
+
+  #Canvas {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+  }

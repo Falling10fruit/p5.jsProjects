@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js example</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: sans-serif;
+      }
+
+      #Content {
+        background-color: rgb(197, 197, 197);
+        padding: 5%;
+        border-radius: 5%;
+        overflow: hidden;
+      }
+
+      #Canvas {
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+      }
+    </style>
+    <script src="Libraries/p5.js"></script>
+    <!--<script src="Libraries/p5.sound.js"></script>-->
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    <div id="Content">
+      <div id="Canvas"></div>
+      <h1 style="text-align: center;"><strong>*Insert creative and related game name here*</strong></h1>
+      <div id="Right" style="float: left; width: 60%;">
+        <p>Yay, I'm now older and smorter. Let's do this
+        <br>This is my second attempt to make a game.
+        <br>
+        <br>Hello and welcome to *Insert a creative and related game name here*!
+        <br>
+        <br>Lore: In this game, you will have to avoid siblings coated with paint and shoot them with your cheese collection. Don't worry, they don't actually die, they just sort of go back to spawning chambers where they wait to hop back in to action. That's why they keep on appearing and you also can restart, DUH *cough* *cough*
+        <br>
+        <br>It also turns out that the walls of the room are replaced with cheese-only portals, this means that the cheese can fly forver if they don't hit enemies. Beat that Entropy, ha! Weird, it feels like the developer is actually too lazy to make anything realistic, hmm...
+        <br>
+        <br>This game is absolutely 100% child-friendly, no death, no bullets, no gore, no guns... Totally not any of these just recolored! Haha!
+        <br>
+        <br>I originally planned to try to actually fullfill my dream as a game developer and start using proper programming languages instead of Scratch, which explains the text above. I also planned to program this in Khan Academy using P roccessing.js until I found out that Processing.js is outdated and replaced with p5.js. So here I am.</p>
+      </div>
+
+      <div id="right" style="float: right; width: 30%;">
+        <a href="#Canvas">Click here to position your window correctly</a>
+        <strong><h2 style="margin-bottom: 0px; line-height: 1.5;">Controls:</h2>
+        <p style="margin-top: 5px;">Mouse: Move character
+        <br>WASD / Arrow keys: Shoot cheese</p></strong>
+        <hr style="border: solid 1px black;">
+        <h2>Update Log:</h2>
+        <p>23 of Mar, 2022
+        <br><ul>
+          <li>Moved the game files from downloads/p5.js to VSCode stuff</li>
+          <li>Updated the library</li>
+        </ul></p>
+
+        <p>3 of Mar, 2022
+        <br><ul>
+          <li>Balanced the wave difficulty (i.e. Red bois cannot spawn until wave 20)</li>
+          <li>Tried to add a shop</li>
+        </ul></p>
+
+        <p>11 of Feb, 2022
+        <br><ul>
+          <li>Managed to get confused on dates</li>
+          <li>Working on Enemy collision</li>
+        </ul></p>
+
+        <p>20 of Feb, 2022
+        <br><ul>
+          <li>Started Update Log</li>
+          <li>Fixed bug where enemies might disappear when other enemies hit you</li>
+        </ul>
+        <br>Known problem(s):
+        <ul>
+          <li>Enemy collision is broken</li>
+          <li>Waves too hard</li>
+          <li>Outline thickness not consistent</li>
+        </ul></p>
+
+        <p>19 of Feb, 2022
+        <br>Fixed bug when bullet hits enemy when here is another enemy (Oh my gosh this bug had made me very stressed)</p>
+
+        <p>Around 28 of Jan, 2022
+        <br>Project moved into VSCode using p5.js</p>
+
+        <p>20 of Jan, 2022:
+        <br>Project created in Khan Acdemy</p>
+      </div>
+    </div>
+  </body>
+</html>

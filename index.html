@@ -1,7 +1,204 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>My p5.js projects!</title>
+		<script>
+			function show(shown, hidden) {
+				document.getElementById(shown).style.display='block';
+				document.getElementById(hidden).style.display='none';
+				return false;
+			}
+		</script>
+	    <script src="Libraries/p5.js"></script>
+    	<!--<script src="Libraries/p5.sound.js"></script>-->
 	</head>
 	<body>
+		<div id="Homepage"><h1>haha yes, get rickrolled hard</h1></div>
+
+		<div id="SecondAttempt" style="display:none">
+			<style scoped>
+				@import "p5.js/Second Attempt to make game/stylesheet.css";
+			</style>
+			<script src="p5.js/Second Attempt to make game/sketch.js"></script>
+
+			<div id="Content">
+				<div id="Canvas"></div>
+				<h1 style="text-align: center;"><strong>*Insert creative and related game name here*</strong></h1>
+				<div id="Right" style="float: left; width: 60%;">
+					<p>Yay, I'm now older and smorter. Let's do this
+					<br>This is my second attempt to make a game.
+					<br>
+					<br>Hello and welcome to *Insert a creative and related game name here*!
+					<br>
+					<br>Lore: In this game, you will have to avoid siblings coated with paint and shoot them with your cheese collection. Don't worry, they don't actually die, they just sort of go back to spawning chambers where they wait to hop back in to action. That's why they keep on appearing and you also can restart, DUH *cough* *cough*
+					<br>
+					<br>It also turns out that the walls of the room are replaced with cheese-only portals, this means that the cheese can fly forver if they don't hit enemies. Beat that Entropy, ha! Weird, it feels like the developer is actually too lazy to make anything realistic, hmm...
+					<br>
+					<br>This game is absolutely 100% child-friendly, no death, no bullets, no gore, no guns... Totally not any of these just recolored! Haha!
+					<br>
+					<br>I originally planned to try to actually fullfill my dream as a game developer and start using proper programming languages instead of Scratch, which explains the text above. I also planned to program this in Khan Academy using P roccessing.js until I found out that Processing.js is outdated and replaced with p5.js. So here I am.</p>
+				</div>
+			
+				<div id="right" style="float: right; width: 30%;">
+					<a href="#Canvas">Click here to position your window correctly</a>
+					<strong><h2 style="margin-bottom: 0px; line-height: 1.5;">Controls:</h2>
+					<p style="margin-top: 5px;">Mouse: Move character
+					<br>WASD / Arrow keys: Shoot cheese</p></strong>
+					<hr style="border: solid 1px black;">
+					<h2>Update Log:</h2>
+					<p>23 of Mar, 2022
+					<br><ul>
+					<li>Moved the game files from downloads/p5.js to VSCode stuff</li>
+					<li>Updated the library</li>
+					</ul></p>
+			
+					<p>3 of Mar, 2022
+					<br><ul>
+					<li>Balanced the wave difficulty (i.e. Red bois cannot spawn until wave 20)</li>
+					<li>Tried to add a shop</li>
+					</ul></p>
+			
+					<p>11 of Feb, 2022
+					<br><ul>
+					<li>Managed to get confused on dates</li>
+					<li>Working on Enemy collision</li>
+					</ul></p>
+			
+					<p>20 of Feb, 2022
+					<br><ul>
+					<li>Started Update Log</li>
+					<li>Fixed bug where enemies might disappear when other enemies hit you</li>
+					</ul>
+					<br>Known problem(s):
+					<ul>
+					<li>Enemy collision is broken</li>
+					<li>Waves too hard</li>
+					<li>Outline thickness not consistent</li>
+					</ul></p>
+			
+					<p>19 of Feb, 2022
+					<br>Fixed bug when bullet hits enemy when here is another enemy (Oh my gosh this bug had made me very stressed)</p>
+			
+					<p>Around 28 of Jan, 2022
+					<br>Project moved into VSCode using p5.js</p>
+			
+					<p>20 of Jan, 2022:
+					<br>Project created in Khan Acdemy</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="ScrollingTest" style="display:none">
+			<style scoped>
+				@import "p5.js/Scrolling test/stylesheet.css";
+			</style>
+			<script src="p5.js/Scrolling test/sketch.js"></script>
+
+			<div id="Content">
+				<div id="Canvas"></div>
+				
+				<div>
+					<h2>Change Log:</h2>
+					<ul>
+						<li><h3 class="Date">13 of April, 2022</h3>
+						<ul>
+							<li>Fixed wall collisions</li>
+							<li>You can now bounce against purple walls</li>
+							<li>Added a bit more Rickroll, but unable to make my mind about level design</li>
+							<li>Contrary to popular believe, I do not crave blood</li>
+						</ul></li>
+						<li><h3 class="Date">12 of April, 2022</h3>
+						<ul>
+							<li>Made fast falling (Crouching in mid air) slower</li>
+							<li>Fixed Flag collision</li>
+							<li>Added more level content including a Rickroll</li>
+							<li>MY NAME IS CHARLES. Stop it Charles</li>
+						</ul></li>
+						<li><h3 class="Date">11 of April, 2022</h3>
+						<ul>
+							<li>Added fancy "debug" thing which tells your position and velocity</li>
+							<li>Mainly played around</li>
+						</ul></li>
+						<li><h3 class="Date">10 of April, 2022</h3>
+						<ul>
+							<li>You now spawn in the last checkpoint you touched when reloading the browser</li>
+							<li>Flags are now grey if not selected</li>
+							<li>Noice particles when touching a checkpoint</li>
+						</ul></li>
+						<li><h3 class="Date">9 of April, 2022</h3>
+						<ul>
+							<li>Added checkpoints, it took a "while"</li>
+						</ul></li>
+						<li><h3 class="Date">8 of April, 2022</h3>
+						<ul>
+							<li>Fixed collisions</li>
+							<li>Made a function to draw the green flag so I can make particles out of it, particles aren't made yet.</li>
+							<li>Working on checkpoints using flags</li>
+						</ul></li>
+						<li><h3 class="Date">7 of April, 2022</h3>
+						<ul>
+							<li>Trying to improve collisions and die to lava walls</li>
+							<li>Found out that functions in objects is a thing</li>
+							<li>Added a epic green flag</li>
+							<li>Figured out how to store data after mixing up the parameters</li>
+						</ul></li>
+						<li><h3 class="Date">18 of Mar, 2022</h3>
+						<ul>
+							<li>Made the lava from red to orange because somebody said it looked like blood when it splashes</li>
+							<li>Made more level stuff</li>
+						</ul></li>
+						<li><h3 class="Date">14 of Mar, 2022</h3>
+						<ul>
+							<li>Added Text</li>
+							<li>Fixed bug when hitting lava</li>
+							<li>I am great at tutoring</li>
+						</ul></li>
+						<li><h3 class="Date">12 of Mar, 2022</h3>
+						<ul>
+							<li>Added Lava</li>
+							<li>Fancy particle effects when dieing lava, bouncing on trampolines, and jumping</li>
+						</ul></li>
+						<li><h3 class="Date">11 of Mar, 2022</h3>
+						<ul>
+							<li>Updated the website to make it look better</li>
+							<li>Made the canvas more responsive with the window size</li>
+						</ul></li>
+						<li><h3 class="Date">9 of Mar, 2022</h3>
+						<ul>
+							<li>Fixed bug where particle doesn't disappear</li>
+							<li>Added partricle effect when player walks</li>
+						</ul></li>
+						<li><h3 class="Date">7 of Mar, 2022</h3>
+						<ul>
+							<li>Finished the first draft of a particle</li>
+						</ul></li>
+						<li><h3 class="Date">6 of Mar, 2022</h3>
+						<ul>
+							<li>Finsihed making the crouching</li>
+						</ul></li>
+						<li><h3 class="Date">5 of Mar, 2022</h3>
+						<ul>
+							<li>Platformer is a thing now since I got the collision thing working, it used to be a floating square</li>
+							<li>Finished the system that renders the level and allows collision to work</li>
+							<li>Started the crouch mechanic</li>
+						</ul></li>
+						<li><h3 class="Date">4 of Mar, 2022</h3>
+						<ul>
+							<li>Started the test project</li>
+							<li>Managed to make scrolling and a rough draft for the collisions</li>
+						</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="MatchGame" style="display:none">
+			<style scoped>
+				@import "p5.js/Match Game for Mama's Birthday/stylesheet.css";
+			</style>
+			<script src="p5.js/Match Game for Mama's Birthday/sketch.js"></script>
+		</div>
 	</body>
 </html>

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" type="image/x-icon" href="Assets/Favicon.png">
 
 		<title>My p5.js projects!</title>
 
@@ -13,6 +14,32 @@
 
 			#Homepage {
 				margin: 5%;
+				font-family: sans-serif;
+			}
+
+			#Homepage .selection {
+				width: 40%;
+				display: flex;
+				flex-direction: column;
+				border: 2px solid black;
+				border-radius: 20px;
+			}
+
+			#Homepage .selection :hover {
+				cursor: pointer;
+			}
+
+			#Homepage .selection img {
+				box-sizing: border-box;
+				width: 100%;
+				border-top-left-radius: 20px;
+				border-top-right-radius: 20px;
+			}
+
+			#Homepage .selection button {
+			    height: 100px;
+				border-bottom-left-radius: 20px;
+				border-bottom-right-radius: 20px;
 			}
 
 			#SecondAttempt {
@@ -41,7 +68,16 @@
 	<body>
 		<div id="Homepage">
 			<h1 style="border-bottom: solid 2px; border-color: black; padding-bottom: 2px;">haha yes, get rickrolled hard</h1>
+			
 			<p>You're probably here for my p5.js projects, well guess what, the website is still under constrcution, go away until later.</p>
+			
+			<h2>Behold! My stuff:</h2>
+
+			<div class="selection">
+				<img src="Assets/Blimp VB.png" alt="Preview of my second attempt to make a game">
+				
+				<button type="button" onclick="show(SecondAttempt, Homepage);"><h2><strong>2nd attempt to make a game</strong></h2></button>
+			</div>
 		</div>
 
 		<div id="SecondAttempt" style="display: none">
@@ -72,6 +108,11 @@
 					<br>WASD / Arrow keys: Shoot cheese</p></strong>
 					<hr style="border: solid 1px black;">
 					<h2>Update Log:</h2>
+					<p>15 of April, 2022
+					<br><ul>
+					<li>Moved the game files from VSCode stuff to Github as well as my other p5.js projects</li>
+					</ul></p>
+
 					<p>23 of Mar, 2022
 					<br><ul>
 					<li>Moved the game files from downloads/p5.js to VSCode stuff</li>
@@ -123,6 +164,11 @@
 				<div>
 					<h2>Change Log:</h2>
 					<ul>
+						<li><h3 class="Date">14 of April, 2022</h3>
+						<ul>
+							<li>Moved the project from VSCode stuff to Github as well as other p5.js projects</li>
+							<li>Probably going to be inactive for a while trying to make the website where I showcae these</li>
+						</ul></li>
 						<li><h3 class="Date">13 of April, 2022</h3>
 						<ul>
 							<li>Fixed wall collisions</li>

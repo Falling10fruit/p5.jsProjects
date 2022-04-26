@@ -1,7 +1,7 @@
 function setup() {
   // put setup code here
   var Canvas = createCanvas(900, 600);
-  Canvas.parent("Canvas");
+  Canvas.parent("Canvas1");
 }
 
 function draw() {

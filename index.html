@@ -72,14 +72,6 @@
 				@import "p5.js/Match Game for Mama's Birthday/stylesheet.css";
 			}
 		</style>
-		
-		<script>
-			function show(shown, hidden) {
-				document.getElementById(shown).style.display='block';
-				document.getElementById(hidden).style.display='none';
-				return false;
-			}
-		</script>
 	    <script src="p5.js/Libraries/p5.js"></script>
     	<!--<script src="p5.js/Libraries/p5.sound.js"></script>-->
 	</head>
@@ -87,24 +79,20 @@
 		<div id="Homepage">
 			<h1 style="border-bottom: solid 2px; border-color: black; padding-bottom: 2px;">haha yes, get rickrolled hard</h1>
 			
-			<p>You're probably here for my p5.js projects, well guess what, the website is still under constrcution, go away until later.</p>
+			<p>You're probably here for my p5.js projects, well guess what, the website is still under construction, go away until later.</p>
 			
 			<h2>Behold! My stuff:</h2>
 
-			<div class="selection" style="float: left; animation: left;">
-				<a href="#" onclick="show(SecondAttempt, Homepage);">
-					<img src="Assets/Blimp VB.png" alt="Preview of my second attempt to make a game">
-					
-					<button type="button"><h2><strong>2nd attempt to make a game</strong></h2></button>
-				</a>
+			<div id="Select1" class="selection" style="float: left; animation: left;">
+				<img src="Assets/Blimp VB.png" alt="Preview of my second attempt to make a game">
+				
+				<button type="button"><h2><strong>2nd attempt to make a game</strong></h2></button>
 			</div>
 
 			<div class="selection" style="float: right; animation: right;">
-				<a href="#" onclick="show(ScrollingTest, Homepage);">
-					<img src="Assets/Blimp VB.png" alt="Preview of my second attempt to make a game">
-					
-					<button type="button"><h2><strong>Scrolling Test</strong></h2></button>
-				</a>
+				<img src="Assets/Blimp VB.png" alt="Preview of my second attempt to make a game">
+				
+				<button type="button"><h2><strong>Scrolling Test</strong></h2></button>
 			</div>
 		</div>
 
@@ -112,7 +100,7 @@
 			<script src="p5.js/Second Attempt to make game/sketch.js"></script>
 
 			<div id="Content">
-				<div id="Canvas"></div>
+				<div id="Canvas1"></div>
 				<h1 style="text-align: center;"><strong>*Insert creative and related game name here*</strong></h1>
 				<div id="Right" style="float: left; width: 60%;">
 					<p>Yay, I'm now older and smorter. Let's do this
@@ -187,7 +175,7 @@
 			<script src="p5.js/Scrolling test/sketch.js"></script>
 
 			<div id="Content">
-				<div id="Canvas"></div>
+				<div id="Canvas2"></div>
 				
 				<div>
 					<h2>Change Log:</h2>
@@ -291,7 +279,17 @@
 
 		<div id="MatchGame" style="display: none">
 			<script src="p5.js/Match Game for Mama's Birthday/sketch.js"></script>
-			<div id="Canvas"></div>
+			<div id="Canvas3"></div>
 		</div>
+
+		<script>
+			var Page = function (Shown, Hidden) {
+				document.getElementById(Shown).style.display='block';
+				document.getElementById(Hidden).style.display='none';
+				return false;
+			}
+
+			document.getElementById("Select1").addEventListener("click", Page("SecondAttempt", "Homepage"));
+		</script>
 	</body>
 </html>

@@ -2,7 +2,7 @@ var Respawn;
 
 function setup () {
     var Canvas = createCanvas(windowWidth/20*13, windowHeight/10*9);
-    Canvas.parent("Canvas");
+    Canvas.parent("Canvas2");
     Respawn = getItem("SpawnPoint");
     if (!Respawn) {
         Respawn = 0;

@@ -9,7 +9,7 @@ function preload () {
 function setup () {
   // put setup code here
   var Canvas = createCanvas(windowWidth, windowHeight-4);
-  Canvas.parent("Canvas");
+  Canvas.parent("Canvas3");
   console.log(width + " " + height);
 }
 

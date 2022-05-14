@@ -1,30 +1,52 @@
+var Shape1, Shape2, Shape3, Shape4, Shape5;
+
+
 function preload () {
-    /*Square = loadImage("Assets/Square.jpg");
-    Circle = loadImage("Assets/Circle.jpg");
-    Diamond = loadImage("Assets/Diamond.jpg");
-    Pentagon = loadImage("Assets/Pentagon.jpg");
-    Hexagon = loadImage("Assets/Hexagon.jpg");*/
+    Shape1 = loadImage("Assets/Square.png");
+    Shape2 = loadImage("Assets/Circle.png");
+    Shape3 = loadImage("Assets/Diamond.png");
+    Shape4 = loadImage("Assets/Pentagon.png");
+    Shape5 = loadImage("Assets/Hexagon.png");
 }
 
 function setup () {
   // put setup code here
   var Canvas = createCanvas(windowWidth, windowHeight-4);
-  Canvas.parent("Canvas3");
   console.log(width + " " + height);
 }
 
 function draw () {
+    imageMode(CENTER);
     rectMode(CENTER);
     textAlign(CENTER);
     noStroke();
+    var Tick = 0;
     var Scene = "Start";
     var Level = [
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
+        [0, 0, 0, 4, 0],
+        [0, 3, 0, 0, 0],
         [0, 0, 0, 1, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0]
+        [0, 0, 2, 0, 0],
+        [0, 0, 0, 5, 0]
     ]
+
+    var processGrid = function  () {
+        for (var y = Level.length-1; y > 0; y--) {
+            for (var x = 0; x < Level[y].length; x++) {
+                if (Level[y][x] > 0) {
+                    //Falling
+                    if (y < Level.length - 1) {
+                        if (Level[y+1][x] == 0) {
+                            Level[y+1][x] == Level[y][x];
+                            Level[y][x] == 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
     draw = function () {
         background(100, 255, 255);
         for (var i = 0; i < ceil(width/100); i ++) {
@@ -51,15 +73,29 @@ function draw () {
             for (var y = 0; y < Level.length; y++){
                 for (var x = 0; x < Level[y].length; x++) {
                     textSize(25);
-                    fill(255, 255, 255);
-                    rect(x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 100, 100);
-                    fill(0, 0, 0);
-                    text(Level[y][x], x*100-(Level[y].length-1)*50 + width/2, y*100-(Level.length-1)*50 + height/2);
-                    text(2*100-(Level[y].length-1)*50, 100, 100);
+                    fill(255, 255, 255, 100);
+                    rect(x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 95, 95, 20);
+
+                    if (Level[y][x] > 0) {
+                        if (Level[y][x] == 1) {
+                            image(Shape1, x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 65, 65);
+                        } else if (Level[y][x] == 2) {
+                            image(Shape2, x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 65, 65);
+                        } else if (Level[y][x] == 3) {
+                            image(Shape3, x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 65, 65);
+                        } else if (Level[y][x] == 4) {
+                            image(Shape4, x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 65, 65);
+                        }
+                    }
                 }
             }
+            processGrid();
         }
-        
-        ellipse(width/2, height/2, 10, 10);
+        //ellipse(width/2, height/2, 10, 10);
+        Tick++;
     }
+}
+
+function windowResized () {
+  resizeCanvas(windowWidth, windowHeight-4);
 }

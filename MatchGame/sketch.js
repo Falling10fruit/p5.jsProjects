@@ -85,6 +85,8 @@ function draw () {
                             image(Shape3, x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 65, 65);
                         } else if (Level[y][x] == 4) {
                             image(Shape4, x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 65, 65);
+                        } else if (Level[y][x] == 5) {
+                            image(Shape5, x*100-(Level[y].length-1)*50 + width/2, y*100-Level.length*50 + height/2, 65, 65);
                         }
                     }
                 }

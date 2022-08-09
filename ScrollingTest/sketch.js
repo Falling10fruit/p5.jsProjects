@@ -1,3 +1,10 @@
+var Song;
+
+function preload () {
+    soundFormats('wav', 'mp3');
+    Song = loadSound('Assets/HeardThis');
+}
+
 var Respawn;
 
 function setup () {
@@ -9,6 +16,8 @@ function setup () {
         storeItem("SpawnPoint", Respawn);
     };
     console.log(Respawn);
+
+    Song.loop();
 }
 
 function draw() {
@@ -343,9 +352,9 @@ function draw() {
         Size: 25,
         Align: CENTER
     }, {
-        X: 2150,
+        X: 2900,
         Y: -1200,
-        Width: 500,
+        Width: 2000,
         Height: 20,
         Type: 1
     }, {
@@ -356,63 +365,35 @@ function draw() {
         Type: -1,
         Order: 2
     }, {
-        X: 2000,
-        Y: -1150,
-        Type: 0,
-        Text: "Never",
-        Size: 25,
-        Align: CENTER
-    }, {
-        X: 2300,
+        X: 2900,
         Y: -1500,
-        Width: 400,
+        Width: 2000,
         Height: 20,
         Type: 3
     }, {
-        X: 2150,
+        X: 2300,
         Y: -1200,
-        Width: 100,
+        Width: 300,
         Height: 20,
         Type: 2
     }, {
-        X: 2150,
-        Y: -1150,
-        Type: 0,
-        Text: "Gonna",
-        Size: 25,
-        Align: CENTER
-    }, {
-        X: 2300,
+        X: 2700,
         Y: -1200,
-        Width: 100,
+        Width: 300,
         Height: 20,
         Type: 2
     }, {
-        X: 2300,
-        Y: -1150,
-        Type: 0,
-        Text: "Run",
-        Size: 25,
-        Align: CENTER
-    }, {
-        X: 2450,
-        Y: -1150,
-        Type: 0,
-        Text: "Around",
-        Size: 25,
-        Align: CENTER
-    }, {
-        X: 2510,
+        X: 3100,
         Y: -1200,
-        Width: 20,
-        Height: 620,
-        Type: 3
-    }, {
-        X: 2400,
-        Y: -900,
-        Width: 200,
+        Width: 300,
         Height: 20,
-        Type: 1
+        Type: 2
+    }, {
+        X: 3500,
+        Y: -1200,
+        Width: 300,
+        Height: 20,
+        Type: 2
     }];
     var Camera = {
         X: 0,
